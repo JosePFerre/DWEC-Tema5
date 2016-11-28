@@ -89,7 +89,7 @@ function dibujaGraficoTartaElecciones() {
         graficoTarta.draw(datos, opciones);
 }
 
-/*Ránking mundial de países más turísticos (por número de visitantes). Deberás representar estos datos mediante un gráfico Geográfico.*/
+/*Ejercicio 2. Ránking mundial de países más turísticos (por número de visitantes). Deberás representar estos datos mediante un gráfico Geográfico.*/
 
 google.charts.setOnLoadCallback(dibujaGraficoPaises);
 
