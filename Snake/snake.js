@@ -19,7 +19,7 @@ class Serpiente{
         this.posy.value = 300;
         this.alto.value=20;
         this.ancho.value=20;
-        this.cabeza.setAttributeNode(this.posx);
+        this.cabeza.setAttributeNode(this.posx); 
         this.cabeza.setAttributeNode(this.posy);
         this.cabeza.setAttributeNode(this.alto);
         this.cabeza.setAttributeNode(this.ancho);
@@ -30,13 +30,13 @@ class Serpiente{
         var posiciones = this.guardaPosiciones();
         
         if (direccion == 'arriba'){
-            this.posy.value = parseInt(this.posy.value) - 15;
+            this.posy.value = parseInt(this.posy.value) - 20;
         } else if (direccion == 'abajo'){
-            this.posy.value = parseInt(this.posy.value) + 15;
+            this.posy.value = parseInt(this.posy.value) + 20;
         } else if (direccion == 'izq'){
-            this.posx.value = parseInt(this.posx.value) - 15;
+            this.posx.value = parseInt(this.posx.value) - 20;
         } else if (direccion == 'der'){
-            this.posx.value = parseInt(this.posx.value) + 15;
+            this.posx.value = parseInt(this.posx.value) + 20;
         }
         
         if(this.snake.length > 1){
@@ -100,9 +100,6 @@ class Comida{
         this.posx=document.createAttribute('cx');
         this.posy=document.createAttribute('cy');
         this.rad=document.createAttribute('r');
-        this.stroke=document.createAttribute('stroke');
-        this.strW=document.createAttribute('stroke-width')
-        this.relleno=document.createAttribute('fill');
         this.dibuja();
     }
     
@@ -110,23 +107,17 @@ class Comida{
         this.posx.value = aleatorioH();
         this.posy.value = aleatorioV();
         this.rad.value = 10;
-        this.stroke.value='black';
-        this.strW.value=3;
-        this.relleno.value='red';
         this.comida.setAttributeNode(this.posx);
         this.comida.setAttributeNode(this.posy);
         this.comida.setAttributeNode(this.rad);
-        this.comida.setAttributeNode(this.stroke);
-        this.comida.setAttributeNode(this.strW);
-        this.comida.setAttributeNode(this.relleno);
         this.svg.appendChild(this.comida);
     }
 }
 
 function aleatorioV(){
-    return Math.floor((Math.random() * 590) + 10);
+    return Math.floor((Math.random() * 585) + 10);
 }
 
 function aleatorioH(){
-    return Math.floor((Math.random() * 1190) + 10);
+    return Math.floor((Math.random() * 785) + 10);
 }

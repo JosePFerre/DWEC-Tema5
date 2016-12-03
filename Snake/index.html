@@ -11,6 +11,12 @@
         <!--JAVASCRIPT SNAKE-->
     </head>
     <body>
-    <svg width="1200" height="600" style="border:2px solid black;"></svg>
+    <div id='contenedor'>
+    <button onclick='start()'>¡Jugar!</button>
+    <button onclick='reload()' style="display:none">Aceptar</button>
+    <div id='perder' style="display:none">Has perdido!<br>Tu puntuación total ha sido: </div>
+    <div id='puntos'>Puntuación: </div>
+    <svg width="800" height="600"></svg>
+    </div>
     </body>
 </html>
