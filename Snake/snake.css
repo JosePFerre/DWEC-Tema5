@@ -9,7 +9,7 @@ html, body{
     font-family: Impact, Charcoal, sans-serif;
 }
 
-button:first-child{
+#start{
     font-family: Impact, Charcoal, sans-serif;
     background-color: darkorange;
     font-size: 50px;
@@ -21,7 +21,7 @@ button:first-child{
     left:35%;
 }
 
-button:nth-child(2){
+#aceptar{
     font-family: Impact, Charcoal, sans-serif;
     background-color: greenyellow;
     font-size: 25px;
@@ -77,4 +77,10 @@ svg circle{
     stroke:red;
     stroke-width:3px;
     fill:orange;
+}
+
+#firma{
+    position: absolute;
+    bottom: 0;
+    color:yellowgreen;
 }
